@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {margin:0; padding:0; box-sizing: border-box;}
+    #wrap {max-width: 1000px;margin: 0 auto;}
+    h1 {text-align: center; margin: 50px;}
+    img {width:100%; margin: 150px 0px 0 0px;}
+    p {font-size: 15px;}
+    span {font-size:15px; color:red;}
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <h1>git으로 포트폴리오 업로드</h1>
+    <img src="img/1.png" alt="img">
+    <p>1. https://github.com/ 에 로그인</p>
+
+    <img src="img/2.png" alt="img">
+    <p>2. 우측상단의 <span>+</span>를 클린한 다음 <span>New repository</span>를 클릭</p>
+
+    <img src="img/3.png" alt="img">
+    <p>
+      3. <span>Repository name</span>을 정한 후, <span>create repository</span> 클릭하여 repository를 생성한다.
+    </p>
+
+    <img src="img/4.png" alt="img">
+    <p>
+      4-1. 여러가지 방법으로 repository를 관리할 수 있는데 제일 쉬운 방법은 github에서 직접 업로드 하는 것이다.
+      이경우 <span>uploading an existing file</span>을 클릭
+    </p>
+
+    <img src="img/5.png" alt="img">
+    <p>
+      업로드할 파일을 올리고, 코멘트를 단 후 <span>commit changes</span>를 클릭한다
+    </p>
+
+    <img src="img/6.png" alt="img">
+    <p>정상적으로 진행했다면 다음과 같은 화면이 나올 것이다.</p>
+    
+    <img src="img/7.png" alt="img">
+    <p>이제 이 파일을 사용해보자 <span>setting</span>-><span>pages</span>페이지로 가서 <span>none</span>상태인 source를 <span>main</span>으로 바꾼 후 <span>save</span>버튼을 누른다</p>
+
+    <img src="img/8.png" alt="img">
+    <p>성공하면 다음과 같은 화면이 나온다. 박스 친 주소가 포트폴리오가 보일 주소이다. <br>
+      나는 index페이지가 main페이지니까 실제 접속 주소는 뒤에 /index를 붙여서<br>
+      https://branchofmee.github.io/gitfor307/index 
+      가 될 것이다.<br>
+      반영에 몇 분 걸리니까 바로 안 뜰 수도 있음 
+    </p>
+
+    <h2>vscode로 깃 관리//작성중!!!</h2>
+    <p>vscode로 깃을 관리하는 방법도 있다.</p>
+    <img src="img/9.png" alt="img">
+    <p>
+      git을 설치했다면 git cmd를 열고 로그인을 한다.<br>
+      git config --global user.name "가입할 때 적은 이름"
+      git config --global user.email "가입할 때 적은 이메일"
+      정상적으로 진행했다면 로그인이 완료된다.
+    </p>
+  </div>
+</body>
+</html>
