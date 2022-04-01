@@ -7,10 +7,10 @@
   <title>Document</title>
   <style>
     * {margin:0; padding:0; box-sizing: border-box;}
-    #wrap {max-width: 1040px;margin: 0 auto; background-color: aliceblue; padding:0 0 60px 0px}
+    #wrap {max-width: 1040px;margin: 0 auto; background-color: aliceblue; padding:0 0 100px 0px}
     h1 {text-align: center; margin: 50px;}
-    img {width:97%; margin: 150px 10px 0 15px;}
-    p {font-size: 15px;}
+    img {width:97%; margin: 150px 10px 10px 15px;}
+    p {font-size: 15px; line-height: 25px;}
     span {font-size:15px; color:red;}
     h2 {margin:200px 0 30px 0px;}
   </style>
@@ -51,11 +51,11 @@
       나는 index페이지가 main페이지니까 실제 접속 주소는 뒤에 /index를 붙여서<br>
       https://branchofmee.github.io/gitfor307/index 
       가 될 것이다.<br>
-      수정과 파일 추가도 동일한 방식(uploading and exisitng file 사용)으로 진행하면 되며,<br>
+      수정과 파일 추가도 동일한 방식(uploading and exisitng file 사용)으로 진행하면 되며,<br><br>
       반영에 몇 분 걸리니까 바로 안 뜰 수도 있음 
     </p>
 
-    <h2>4-2 vscode로 깃 관리//작성중!!</h2>
+    <h2>4-2 vscode로 깃 관리</h2>
     <p>vscode로 깃을 관리하는 방법도 있다.</p>
     <img src="img/12.png" alt="img">
     <p>
@@ -93,7 +93,7 @@
       터미널이 열리면 깃허브의 저장소와 작업자의 노트북에 분산된 작업물을 연결해야 한다(한번만 하면 이후 자동 연결)<br>
       아까 깃허브 저장소에서 복사했던 <span>url copy</span>버튼으로 저장소의 주소를 복사한다.<br>
       터미널로 돌아와서<br>
-      <span>git remote add origin 복사했던 주소</span>를 친다.<br>
+      <span>git remote add origin {url copy 버튼으로 복사했던 주소}</span>를 친다(이미지의 터미널 참고).<br>
       (정상적으로 연결되었는지 확인하는 명령어는 git remote -v)
     </p>
 
@@ -101,9 +101,9 @@
     <p>
       연결이 완료되면 저장소로 노트북에서 추가작업한 파일을 커밋해보자. 터미널에 쓸 명령어는 아래와 같다.<br>
       (1) git init    //깃 초기화로 최초 업로드에만 사용한다. 두번째부터는 칠 필요x<br>
-      (2) git add .   //모든 파일을 업로드 하겠다는 명령어
-      (3) git commit -m "코멘트 내용"   //"따옴표" 안에 있는 내용을 설명으로 달고 커밋해 달라는 명령어
-      (4) git push origin 브랜치이름    // 현시점에서 저장소에 있는 branch는 main 밖에 없으니 git push origin main이라 치면 된다.
+      (2) git add .   //모든 파일을 업로드 하겠다는 명령어<br>
+      (3) git commit -m "코멘트 내용"   //"따옴표" 안에 있는 내용을 설명으로 달고 커밋해 달라는 명령어<br>
+      (4) git push origin 브랜치이름    //해당 브랜치로 작성내용을 업로드 하라는 명령어. 현시점에서 저장소에 있는 branch는 main 밖에 없으니 git push origin main이라 치면 된다.
     </p>
   </div>
 </body>
