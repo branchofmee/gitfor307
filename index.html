@@ -57,13 +57,47 @@
 
     <h2>4-2 vscode로 깃 관리//작성중!!</h2>
     <p>vscode로 깃을 관리하는 방법도 있다.</p>
-    <img src="img/9.png" alt="img">
+    <img src="img/12.png" alt="img">
     <p>
-      git을 설치했다면 git cmd를 열고 로그인을 한다.<br>
+      git을 설치했다면 git cmd를 열고 로그인을 한다. 로그인 명령어는 아래와 같다<br>
       git config --global user.name "가입할 때 적은 이름"<br>
-      git config --global user.email "가입할 때 적은 이메일"
-      정상적으로 진행했다면 로그인이 완료된다.
+      git config --global user.email "가입할 때 적은 이메일"<br>
+      정상적으로 진행했다면 로그인이 완료된다.<br>
+      만약 제대로 로그인 했는지 확인하고 싶다면 git config user.name  을 사용하면 된다. 성공하면 명령어를 쳤을 때 본인 아이디가 나온다.<br>
     </p>
+
+    <img src="img/13.png" alt="img">
+    <p>
+      이제 만들었던 저장소로 돌아간다. 우리가 사용할 것은 <span>url copy 버튼</span>과 <span>download zip 버튼</span>이다.<br>
+      downloadzip버튼으로 저장소에 올라가 있는 원본 파일을 받아 작업할 파일에 압축해제 한다. 
+    </p>
+
+    <img src="img/14.png" alt="img">
+    <p>
+      해당 파일에서 우클릭 후 git bash here을 선택하면 cmd창이 뜬다. <br>
+      
+      
+    </p>
+
+    <img src="img/15.png" alt="img">
+    <p>여기서 앞으로는 vscode에서 작업한다고 cmd에게 말하는 명령어가 
+      code .<br>이다. 성공시 vscode가 열린다.</p>
+
+    <img src="img/16.png" alt="img">
+    <p>
+      <span>터미널</span>에서 <span>새터미널</span>을 선택한다.
+    </p>
+
+    <img src="img/17.png" alt="img">
+    <p>
+      터미널이 열리면 깃허브의 저장소와 작업자의 노트북에 분산된 작업물을 연결해야 한다(한번만 하면 이후 자동 연결)<br>
+      아까 깃허브 저장소에서 복사했던 <span>url copy</span>버튼으로 저장소의 주소를 복사한다.<br>
+      터미널로 돌아와서<br>
+      <span>git remote add origin 복사했던 주소</span>를 친다.<br>
+      (정상적으로 연결되었는지 확인하는 명령어는 git remote -v)
+    </p>
+
+    
   </div>
 </body>
 </html>
